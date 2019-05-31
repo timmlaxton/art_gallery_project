@@ -5,13 +5,13 @@ DROP TABLE artists;
 
 CREATE TABLE artists (
   id serial4 primary key,
-  artist_name varchar(255)
+  name varchar(255)
 );
 
 CREATE TABLE exhibitions (
   id serial4 primary key,
-  exhibition_name varchar(255),
-  exhibition_date int2,
-  fee int2,
-  artist_id INT8 references artists(id)
+  name varchar(255),
+  opening varchar(225),
+  closing varchar(225),
+  entry_fee int2
 );
