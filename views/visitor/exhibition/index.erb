@@ -1,0 +1,20 @@
+<h1>Mis Seen Gallery</h1>
+
+
+<table>
+  <tr>
+
+    <th>Name</th>
+    <th>Opening</th>
+    <th>Closing</th>
+    <th>Entry_Fee</th>
+  </tr>
+
+  <% for exhibition in @exhibitions %>
+
+<tr>
+  <td><a href="exhibtions/<%= exhibition.id() %"><= exhibition.id() %></a></td>
+  <td><%= exhibition.name()%></td>
+  <td><%= exhibition.opening()%></td>
+  <td><%= exhibition.closing()%></td>
+  <td><%= exhibition.entry_fee()%></td>

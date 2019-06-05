@@ -1,0 +1,18 @@
+<p> Name <%= @exhibition.name %></p>
+
+<form method = "post" action = "/manager/exhibitions/<%= @exhibition.id %>/delete">
+
+<input type= "submit" value= "delete entry"/>
+
+</form>
+
+<form method = "get" action = "/manager/exhibitions/<%= @exhibition.id %>/edit">
+
+  <input type = "submit" value= "edit entry"/>
+
+
+<form method = "get" action = "/manager/exhibitions/<%= @exhibition.id %>/add">
+
+  <input type = "submit" value "add entry"/>
+
+</form>

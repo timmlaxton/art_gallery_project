@@ -1,0 +1,6 @@
+<% for artist in @artists %>
+<p>Name: <%= artist.name %></p>
+<form action="/visitor/artists/<%=artist.id%>" method="get">
+  <input type="submit" value="Show details">
+</form>
+<% end %>

@@ -1,0 +1,26 @@
+<form action="/manager/exhibitions/<%= @exhibition.id%>/edit" method="post">
+
+
+<div class="field">
+  <label for="name">Name:</label>
+  <input type="text" name="name" value="<%= @exhibition.name %>">
+  </div>
+
+
+  <div class="field">
+    <label for="opening">Opening:</label>
+    <input type="text" name="opening" value=" <%= @exhibition.opening %>">
+    </div>
+
+
+    <div class="field">
+      <label for="closing">Closing:</label>
+      <input type="text" name="closing" value=" <%= @exhibition.closing %>">
+      </div>
+
+      <div class="field">
+        <label for="entry_fee">Entry_fee:</label>
+        <input type="text" name="entry_fee" value=" <%= @exhibition.entry_fee %>">
+        </div>
+  <input type="submit" value="Edit this exhibition">
+</form>

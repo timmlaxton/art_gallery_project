@@ -1,20 +1,7 @@
 require_relative('../models/artist')
 require_relative('../models/exhibition')
 
-
-
-exhibition1 = Exhibition.new({'name' => "Electric Soup Anniversary", 'opening' => "2019-06-02", "closing" => "2019-10-12", "entry_fee" => 6})
-exhibition1.save()
-
-exhibition2 = Exhibition.new({'name' => "Hard Boiled Retrospective", 'opening' => "2019-02-06", "closing" => "2019-05-14", "entry_fee" => 10})
-exhibition2.save()
-
-exhibition3 = Exhibition.new({'name' => "AKIRA", 'opening' => "2020-02-20", "closing" => "2020-06-12", "entry_fee" => 12})
-exhibition3.save()
-
-exhibition4 = Exhibition.new({'name' => "Colours in comics", 'opening' => "2020-07-20", "closing" => "2020-10-12", "entry_fee" => 12})
-exhibition3.save()
-
+require('pry')
 
 
 artist1 = Artist.new({'name' => "Frank Quietly"})
@@ -28,3 +15,21 @@ artist3.save
 
 artist4 = Artist.new({'name' => "Jordie Bellaire"})
 artist4.save
+
+exhibition1 = Exhibition.new({'name' => "Electric Soup Anniversary", 'opening' => "02-06-2019", "closing" => "12-10-2020", "entry_fee" => 6, "artist_id" => artist1.id})
+exhibition1.save()
+
+exhibition2 = Exhibition.new({'name' => "Hard Boiled Retrospective", 'opening' => "06-02-2019", "closing" => "12-05-2020", "entry_fee" => 10, "artist_id" => artist2.id})
+exhibition2.save()
+
+exhibition3 = Exhibition.new({'name' => "AKIRA", 'opening' => "20-02-2020", "closing" => "12-06-2020", "entry_fee" => 12, "artist_id" => artist3.id})
+exhibition3.save()
+
+exhibition4 = Exhibition.new({'name' => "Colours in comics", 'opening' => "20-07-2020", "closing" => "12-10-2020", "entry_fee" => 12, "artist_id" => artist4.id})
+exhibition4.save()
+
+
+
+
+binding.pry
+nil

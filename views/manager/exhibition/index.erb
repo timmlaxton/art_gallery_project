@@ -1,0 +1,19 @@
+<form method = "get" action = "/manager/exhibitions/new">
+<input type = "submit" value = "add entry"/>
+</form>
+
+<% for exhibition in @exhibitions %>
+<p>Name: <%= exhibition.name %></p>
+<p>Opening:<%= exhibition.opening %></p>
+<p>Closing:<%= exhibition.closing %></p>
+<p>Entry Fee:<%= exhibition.entry_fee %></p>
+<form action="/manager/exhibitions/<%=exhibition.id%>" method="get">
+  <input type="submit" value="Show details">
+</form>
+
+
+
+
+
+
+<% end %>
